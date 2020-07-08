@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目搭建</title>
+  <!-- 公共样式 -->
+
+  <link rel="stylesheet" href="./css/common/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/common/star.css">
+  <link rel="stylesheet/less" type="text/less" href="css/content/index.less">
+  <!-- 私有样式 -->
+  <link rel="stylesheet" href="./css/common/swiper.min.css">
+ 
+ 
+</head>
+
+<body>
+  <div class="stars"></div>
+  <!-- 头部导航 -->
+  <div id="nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#property">物业管理</a></li>
+            <!-- <li><a href="#fire-service">消防检测</a></li> -->
+            <li><a href="#smart-home">智能家居</a></li>
+            <li><a href="#supermarket">智慧商超</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="navbar-header">
+            <h1 class="navbar-brand">云家惠智能数控平台</h1>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div id="time"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 主题部分 -->
+  <div id="main">
+    <!-- 第一屏>>>物业管理 -->
+    <div id="property" class="tab_content">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="biao">
+            <div id="door_type"></div> <!-- 1小区开门类型数据 -->
+          </div>
+          <div class="biao">
+            <div id="door_plot"></div> <!-- 2小区本季度设备使用率10 -->
+          </div>
+          <div class="biao">
+            <video controls="controls" autoplay="autoplay" loop muted>
+              <source src="./video/1.mp4" type="video/mp4" title="小区停车场监控" />
+              <!-- <source src="http://hls01open.ys7.com/openlive/bca3fd8942dc4c4ab9b0f768afcbdae3.m3u8" type="video/mp4" title="小区停车场监控" /> -->
+            </video>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="kuang">
+            <div id="property_map" style="width: 4.85rem;height: 2.6rem;"></div>
+          </div>
+          <div class="kuang2">
+            <!-- <div>
+              <div class="swiper-container swiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide new"></div>
+                  <div class="swiper-slide new"></div>
+                  <div class="swiper-slide new"></div>
+                </div>
+              </div>
+            </div> -->
+            <div>
+              <div class="swiper-container swiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/dbdfc43cf9824f30856489231a643cc1.png" alt="">
+                    <span>
+                      <p>小区：铁西家园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/216f810e0ed24e09bb5162fb5ae281bc.png" alt="">
+                    <span>
+                      <p>小区：铁西家园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/eccbe0a0e4a1402da01b2a16f97a9fb0.png" alt="">
+                    <span>
+                      <p>小区：铁西家园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/4ee7cb093ae54526b3e4f9de834098aa.png" alt="">
+                    <span>
+                      <p>小区：铁西家园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/3b18585f8bfb419ab2d50f1bcb00998b.png" alt="">
+                    <span>
+                      <p>小区：铁西家园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/869a876641f649febcf57156a5b1fe94.png" alt="">
+                    <span>
+                      <p>小区：铁西家园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="swiper-container swiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/06fc0eaf12e84a4fb54226cf0f007feb.png" alt="">
+                    <span>
+                      <p>小区：富城家园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <!-- <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/3cd622af03c242bc8a2062f785003597.png" alt="">
+                    <span>
+                      <p>小区：富城家园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div> -->
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/00b07da292224e4180d60324e060e2fa.png" alt="">
+                    <span>
+                      <p>小区：富城家园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/0ca3be5bd82d47d098c3defd5723c8e0.png" alt="">
+                    <span>
+                      <p>小区：富城家园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/e2bd2477ba99433bbb761ae464bf6c5a.png" alt="">
+                    <span>
+                      <p>小区：富城家园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/b2d3f393a0114a148181388cb1d29371.png" alt="">
+                    <span>
+                      <p>小区：富城家园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="swiper-container swiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/61268d677bfc48e5926c35f95b2ecf98.png" alt="">
+                    <span>
+                      <p>小区：春光嘉园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/ed802bf90f404c5c9c1430988b360266.png" alt="">
+                    <span>
+                      <p>小区：春光嘉园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <!-- <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/cc9d3bae224949cb8a950ad789e7e13b.png" alt="">
+                    <span>
+                      <p>小区：春光嘉园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div> -->
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/bac282f2b9014d30a463709e107318d9.png" alt="">
+                    <span>
+                      <p>小区：春光嘉园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/1101d83150614ebcb71cf733d4b2894d.png" alt="">
+                    <span>
+                      <p>小区：春光嘉园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/633c4f957aeb4c55bdaa1a0b5c86f1ab.png" alt="">
+                    <span>
+                      <p>小区：春光嘉园</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="swiper-container swiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/111a8270066f43d989fd4f427fd3fb3e.png" alt="">
+                    <span>
+                      <p>小区：云常社区</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/111a8270066f43d989fd4f427fd3fb3e.png" alt="">
+                    <span>
+                      <p>小区：云常社区</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/e1386feeb1d84e37aae25b4d1d406cf8.png" alt="">
+                    <span>
+                      <p>小区：云常社区</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/cfa70d027dcc43b2b52910df39cbd900.png" alt="">
+                    <span>
+                      <p>小区：云常社区</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/4d69c65aebcc4f3dae539c7d83367df2.png" alt="">
+                    <span>
+                      <p>小区：云常社区</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/551f6121b55f40e9913debfb76cc8146.png" alt="">
+                    <span>
+                      <p>小区：云常社区</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="http://118.89.235.124:8080/images/ef28f4dd776f46cbb0ba726b8682399e.png" alt="">
+                    <span>
+                      <p>小区：云常社区</p>
+                      <p>抓拍时间：2020/07/03</p>
+                      <p>单元：*栋*单元*号</p>
+                      <p>用户类型：业主</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="biao twoBiao">
+            <div id="home_install4" style="width: 2.28rem;height: .6rem;"></div>
+            <div id="home" style="width: 2.28rem;height: 1.45rem;"></div>
+          </div>
+          <div class="biao report">
+            <h5>物业消息上报</h5>
+            <ul class="_container" id="demo">
+              <li><span>富城家园/线路连电</span><span>2020/06/21 <a
+                    href="http://118.89.235.124:8080/images/bf6a9e184255480cbfc4477b93665a29.jpg">详情</a></span></li>
+              <li><span>祥和花园/漏水</span><span>2020/06/22 <a
+                    href="http://118.89.235.124:8080/images/be3e5e85bfa9426b9a955cd8f4e2aa1e.jpg">详情</a></span></li>
+              <li><span>毓秀国际/窗户维修</span><span>2020/06/23 <a
+                    href="http://118.89.235.124:8080/images/29d25201499e4d56b8d58be10e38eec3.jpg">详情</a></span></li>
+              <li><span>云常社区/家里漏水</span><span>2020/06/24<a
+                    href="http://118.89.235.124:8080/images/77d2618725194adc9aeeea9a14ed8bb5.jpg">详情</a></span>
+              </li>
+              <li><span>云常社区/访客开门</span><span>2020/06/21 <a
+                    href="http://118.89.235.124:8080/images/b0e11f5fb4d74cbab4767a2ea6c71b97.jpg">详情</a></span></li>
+              <li><span>云常社区/农民工</span><span>2020/06/22 <a
+                    href="http://118.89.235.124:8080/images/fbf793b56969458fa991e3af32662a50.jpg">详情</a></span></li>
+              <li><span>云常社区/坏了</span><span>2020/06/23 <a
+                    href="http://118.89.235.124:8080/images/478f2c121c6c44d98fe3049538a6d43c.jpg">详情</a></span></li>
+              <li><span>毓秀国际/公㝢1号9楼楼道顶板</span><span>2020/06/24<a
+                    href="http://118.89.235.124:8080/images/3cf36f1d00514bd6859e7b3ea7b29096.png">详情</a></span></li>
+              <li><span>云常社区/坏了坏了</span><span>2020/06/25 <a
+                    href="http://118.89.235.124:8080/images/7343c43fc9b047f3bbd536aaefc05cea.jpg">详情</a></span></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第二屏>>>消防检测 -->
+    <div id="fire-service" class="tab_content container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="map_border" id="map1"></div>
+        </div>
+        <div class="col-md-7">
+          <div class="fire_pie">
+            <div id="fire_pie" style="width: 5.5rem; height:1rem;"></div>
+          </div>
+          <div class="fire_list">
+            <div id="Demo">
+              <table>
+                <tr class="tbTitle">
+                  <th>上报情况</th>
+                  <th>上报地点</th>
+                  <th>上报日期</th>
+                  <th>图片</th>
+                  <th>图片</th>
+                </tr>
+                <tr class="tbContext">
+                  <td>管道漏水</td>
+                  <td>赛罕区大学东街18号</td>
+                  <td>20/06/12</td>
+                  <td><img src="./img/page2/xiaofang/1.jpg" alt="" id="img"></td>
+                  <td><img src="./img/page2/xiaofang/2.jpg" alt=""></td>
+                </tr>
+                <tr class="tbContext">
+                  <td>井盖丢了2</td>
+                  <td>新城区海拉尔西街12号</td>
+                  <td>20/06/13</td>
+                  <td><img src="./img/page2/xiaofang/1.jpg" alt="" id="img"></td>
+                  <td><img src="./img/page2/xiaofang/2.jpg" alt=""></td>
+                </tr>
+                <tr class="tbContext">
+                  <td>路灯损坏</td>
+                  <td>玉泉区惠民路</td>
+                  <td>20/06/14</td>
+                  <td><img src="./img/page2/xiaofang/1.jpg" alt="" id="img"></td>
+                  <td><img src="./img/page2/xiaofang/2.jpg" alt=""></td>
+                </tr>
+                <tr class="tbContext">
+                  <td>道路坑洼</td>
+                  <td>回民区财经大学门前</td>
+                  <td>20/06/15</td>
+                  <td><img src="./img/page2/xiaofang/1.jpg" alt="" id="img"></td>
+                  <td><img src="./img/page2/xiaofang/2.jpg" alt=""></td>
+                </tr>
+                <tr class="tbContext">
+                  <td>垃圾无人清理</td>
+                  <td>新城区新华广场内</td>
+                  <td>20/06/16</td>
+                  <td><img src="./img/page2/xiaofang/1.jpg" alt="" id="img"></td>
+                  <td><img src="./img/page2/xiaofang/2.jpg" alt=""></td>
+                </tr>
+                <tr class="tbContext">
+                  <td>废弃僵尸车堵路</td>
+                  <td>金桥伊利路</td>
+                  <td>20/06/17</td>
+                  <td><img src="./img/page2/xiaofang/1.jpg" alt="" id="img"></td>
+                  <td><img src="./img/page2/xiaofang/2.jpg" alt=""></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第三屏>>>智能家居 -->
+    <div id="smart-home" class="tab_content container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="borders">
+            <p>高素质人才团队</p>
+            <div id="jiaju" style="width: 2.3rem;height: 1.4rem;"></div>
+          </div>
+          <div class="borders">
+            <p>云常荣耀墙👍</p>
+            <div class="win">
+            <img src="./img/page3/win/信用证书.png" alt="">
+              <img src="./img/page3/win/检验报告.png" alt="">
+              <img src="./img/page3/win/荣誉证书.png" alt="">
+            </div>
+          </div>
+          <div class="borders">
+            <p>精细的本地服务</p>
+            <div id="jiaju1" style="width: 2.3rem;height: 1.3rem;"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="video_bac">
+            <h5>云常科技</h5>
+            <video controls="controls" autoplay="autoplay" loop muted>
+              <source src="./video/云常科技.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div style="display: flex;">
+            <div class="border1">
+              <p class="border1_b">合作企业单位</p>
+              <ul style="padding: 0 .1rem;">
+                <li style="color: aqua;">北京华盛中天咨询内蒙古分公司</li>
+                <li style="color: rgb(233, 73, 10);">北京三维众智内蒙古分公司</li>
+                <li style="color: bisque;">软通动力</li>
+                <li style="color: blue;">软通智慧</li>
+                <li style="color: cadetblue;">招商银行</li>
+                <li style="color: darkkhaki;">内蒙古智云翔科技</li>
+                <li style="color: dodgerblue;">加禾物业</li>
+                <li style="color: lawngreen;">星宸物业</li>
+                <li style="color: lightgrey;">昭君路办事处</li>
+                <li style="color: mediumslateblue;">佳泰物业</li>
+                <li style="color: orchid;">云常物业</li>
+                <li style="color: tomato;">玉泉区政法委</li>
+                <li style="color: yellow;">乌海分公司</li>
+                <li style="color: slategrey;">昭君路恒盛社区······</li>
+              </ul>
+            </div>
+            <div class="border2">
+              <p class="border2_b">销售业绩遥遥领先</p>
+              <div id="jiaju2" style="width: 2.32rem;height: 1.2rem;padding: .05rem;"></div>
+            </div>
+            <!-- 折线图 年份 -->
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="borders">
+            <p>智能手环功能</p>
+            <div class="big-swiper">
+              <div class="swiper-container swiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image:url(./img/page3/img/1.jpg)">智能手环</div>
+                  <div class="swiper-slide" style="background-image:url(./img/page3/img/2.jpg)">型号1-棕色</div>
+                  <div class="swiper-slide" style="background-image:url(./img/page3/img/3.jpg)">心率监控</div>
+                  <div class="swiper-slide" style="background-image:url(./img/page3/img/4.jpg)">脉搏测量</div>
+                  <div class="swiper-slide" style="background-image:url(./img/page3/img/5.jpg)">体温监测</div>
+                  <div class="swiper-slide" style="background-image:url(./img/page3/img/6.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/page3/img/7.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/page3/img/8.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/page3/img/9.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/page3/img/10.jpg)"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="borders">
+            <p>智能门禁测体温</p>
+            <div class="big-swiper2">
+            <div class="swiper-container swiper3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(./img/page3/face/13302-1.png)">智能门禁</div>
+                <div class="swiper-slide" style="background-image:url(./img/page3/face/道闸机主机.png)">道闸机主机</div>
+                <!-- <div class="swiper-slide" style="background-image:url(./img/page3/face/无感通行主机.png)"></div> -->
+                <div class="swiper-slide" style="background-image:url(./img/page3/face/ELC13301.png)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/page3/face/ELF801-1.png)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/page3/face/ELF802.png)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/page3/face/ELF802-1.png)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/page3/face/img-spotiq-left.png)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/page3/face/抓拍机&无感通行主机.png)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/page3/face/13.png)"></div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          </div>
+          <div class="borders">
+            <p>其他智能家居设备</p>
+            <div class="big-swiper3">
+              <div class="swiper-container swiper4">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image:url(./img/page3/other/1.png)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/page3/other/2.png)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/page3/other/3.png)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/page3/other/4.png)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/page3/other/5.png)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/page3/other/6.png)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/page3/other/8.png)"></div>
+                </div>
+                <!-- Add Scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第四屏>>>智慧商超 -->
+    <div id="supermarket" class="tab_content">
+      <!-- 顶部 -->
+      <div class="top">
+        <div class="col-md-4">
+          <div>
+            <img src="./img/page4/商家.png" alt="">总商家数<p>150</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <img src="./img/page4/确认订单.png" alt="">
+            总订单量<p>1583</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <img src="./img/page4/出货放行申请流程.png" alt="">
+            总出货量<p>2851</p>
+          </div>
+        </div>
+      </div>
+      <!-- 底部 -->
+      <div class="bottom">
+        <div class="row">
+          <div class="col-md-4">
+            <div id="shop" style="width: 3rem;height:2rem;"></div>
+            <div id="shop1" style="width: 3rem;height: 2rem;"></div>
+          </div>
+          <div class="col-md-8">
+            <div class='first-box'>
+              <div class="second-box">
+                <div class="start_left">
+                  <h4>前十店铺销售统计表</h4>
+                  <li class="header-li"><span>序号</span> <span>商铺</span> <span>订单总笔数</span><span>销售额</span></li>
+                  <ul style="height:2.3rem; overflow: hidden;">
+                    <li><span>1</span> <span>积云教育</span><span>6</span><span>4002</span></li>
+                    <li><span>2</span> <span>云家惠超市</span> <span>156</span><span>3443</span></li>
+                    <li><span>3</span> <span>伊利液态奶</span> <span>47</span><span>2566</span></li>
+                    <li><span>4</span> <span>鲜到鲜生螃蟹</span> <span>7</span><span>2556</span></li>
+                    <li><span>5</span> <span>鲜如一品</span> <span>76</span><span>1709</span></li>
+                    <li><span>6</span> <span>海汇楼</span> <span>202</span><span>1489</span></li>
+                    <li><span>7</span> <span>草原甘露纯净水</span> <span>8</span><span>1035</span></li>
+                    <li><span>8</span> <span>圣天生鲜</span> <span>5</span><span>592</span></li>
+                    <li><span>9</span> <span>丰园菜馆</span> <span>9</span><span>504</span></li>
+                    <li><span>10</span> <span>够样优选</span> <span>3</span><span>209</span></li>
+                    <li><span>11</span> <span>内蒙古家园食品</span> <span>8</span><span>203</span></li>
+                    <li><span>12</span> <span>一方好礼茶叶</span> <span>3</span><span>194</span></li>
+                    <li><span>13</span> <span>天外景丰海洋馆</span> <span>1</span><span>158</span></li>
+                  </ul>
+
+                </div>
+              </div>
+              <div id="shop3" style="width: 3rem;height: 2.8rem;"></div>
+            </div>
+            <div class="lamp">
+              <h4>超市行业分类</h4>
+              <div class="gundongBox">
+                <div class="gundongList">
+                  <span><img src="./img/page4/home/1.jpg" alt="">
+                    <p>餐饮美食</p>
+                  </span>
+                  <span><img src="./img/page4/home/2.jpg" alt="">
+                    <p>家政服务</p>
+                  </span>
+                  <span><img src="./img/page4/home/3.jpg" alt="">
+                    <p>酒店住宿</p>
+                  </span>
+                  <span><img src="./img/page4/home/4.jpg" alt="">
+                    <p>生鲜配送</p>
+                  </span>
+                  <span><img src="./img/page4/home/5.jpg" alt="">
+                    <p>美容美发</p>
+                  </span>
+                  <span><img src="./img/page4/home/6.jpeg" alt="">
+                    <p>医疗保健</p>
+                  </span>
+                  <span><img src="./img/page4/home/7.jpg" alt="">
+                    <p>休闲娱乐</p>
+                  </span>
+                  <span><img src="./img/page4/home/8.jpeg" alt="">
+                    <p>教育培训</p>
+                  </span>
+                  <span><img src="./img/page4/home/9.jpg" alt="">
+                    <p>汽车服务</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <img src="./img/bottomline.png" alt="" class='last_img'>
+<script>
+
+</script>
+
+<!-- 轮播图js -->
+<script src="./js/common/swiper.min.js"></script>
+<script src="./js/content/swiper.js"></script>
+  <!-- 屏幕适配插件 -->
+  <script src="./js/common/flexble.js"></script>
+  <!-- bootstrap插件 jquery插件 -->
+  <script src="./js/common/jquery.min.js"></script>
+  <script src="./js/common/bootstrap.min.js"></script>
+  <!-- less样式插件 -->
+  <script src="js/common/less.min.js"></script>
+  <!-- 3d页面插件 -->
+  <script src="./js/common/prefixfree.min.js"></script>
+  <!-- 引入时间插件 -->
+  <script src="./js/content/date.js"></script>
+  <!-- 点击导航设置插件 -->
+  <script src="./js/content/navbar.js"></script>
+  <!-- 引入echarts图表插件 -->
+  <script src="./js/common/echarts.min.js"></script>
+  <script src="./js/content/charts.js"></script>
+  
+
+</body>
+
+</html>
+

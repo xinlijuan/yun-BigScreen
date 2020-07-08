@@ -1,0 +1,494 @@
+// 公共样式
+*{
+  margin: 0;
+  padding: 0;
+  perspective: 4.25rem;/* 3d效果 */
+}
+body{
+  background:#062239;//  rgba(22, 40, 202, 0.788)
+}
+// 头部导航
+#nav{
+   width: 100%;
+   height:.65rem;
+   background: url(../../img/page1/bg_top.png) top center/100% 100% no-repeat; 
+  .container{
+    width: 100%;
+    .col-md-4{
+      text-align: center;
+      line-height: .5rem;
+    }
+    .nav-tabs{
+      border-bottom: none;
+      font-size: .1rem;
+      padding-top: .1rem;
+    }
+    .navbar-header{
+      color: #1976D2;
+      padding: 0 .5rem;
+    }
+    .navbar-brand{
+      font-size: .2rem;
+    }
+    #time{
+      color: rgba(243, 236, 236, .8);
+      font-size: .12rem;
+    }
+  }
+}
+.last_img{
+  width: 100%;
+   position: fixed;
+   bottom: 0.05rem;
+}
+// 主体样式
+#main{
+  color: whitesmoke;
+  margin: .06rem;
+
+  // 物业管理
+  #property{
+    color: rgb(16, 241, 28);
+    font-size: 20px;
+    width: 100%;
+    .biao{
+      width: 2.3rem;
+      height: 1.5rem;
+      background: url(../../img/page1/t_border.png) no-repeat top center/100% 100%;
+      margin-bottom: 0.1rem;
+      padding: 0.01rem;
+      #door_type,#door_plot{
+        width: 2.28rem;
+        height: 1.45rem;
+      }
+      video{
+        width: 2.2rem;
+        height: 1.4rem;
+        margin: .045rem;
+        border-radius: 5px;
+      }
+    }
+    .twoBiao{
+      height: 2.1rem;
+    }
+    .kuang{
+      width: 4.85rem;
+      height: 2.6rem;
+      background: url(../../img/page1/center01.png) top center/100% 100% no-repeat;
+      margin-bottom: 0.1rem;
+    }
+    .kuang2{
+      width: 4.85rem;
+      height: 2rem;
+      background: url(../../img/page1/center02.png) top center/100% 100% no-repeat,url(../../img/page1/line_img.png) no-repeat center,url(../../img/page1/line_img\ -\ 90.png) no-repeat center/90%;
+      div{
+        width: 2.325rem;
+        height: 0.999rem; 
+        float: left;
+        background: url(../../img/page1/枪机32.png) no-repeat;
+        img{
+          width: 100px;
+          height: 100px;
+          float: left;
+        }
+        span{
+          font-size: 10px;
+          float: right;
+        }
+        .swiper-slide{
+          padding: .15rem .25rem .1rem .25rem;
+        }
+      }
+    }
+    .report{
+      background-color: rgb(5, 7, 20,0.5);
+      text-align: center;
+      height: 2.5rem;
+      font-size: 12px;
+      padding: .1rem .2rem;
+      h5{
+        color: #00FFFF;
+        font-weight:bold ;
+      }
+      ._container {
+        overflow: hidden;
+        height: 2rem;
+        li {
+          height: .3rem;
+          line-height: .1rem;
+        }
+        li:first-child {
+          margin-top: 0;
+          transition: margin-top .8s;
+        }
+        span:first-child{
+          float: left;
+          color: rgb(16, 189, 219);
+          font-size: .09rem;
+         }
+         span:last-child{
+          float: right;
+          color: rgb(15, 179, 78);
+          font-size: .09rem;
+          a{
+            font-size: .08rem;
+          }
+         }
+      }
+    }
+  }
+  
+  // 消防检测
+  #fire-service{
+    width: 100%;
+    .map_border{
+      width:4rem;
+      height:4.5rem;
+      background: url(../../img/page2/gy-bj.png) no-repeat top center/100% 100%;
+      opacity: 0.8;
+      border-radius:20px;
+    }
+    .col-md-7{
+      width:5.7rem;
+      margin: 0 auto;
+      .fire_pie{
+        height:1rem;
+      }
+      .fire_list{
+        height: 3.5rem;
+      }
+    }
+    #Demo{
+      width: 4.8rem;
+      margin: 0 auto;
+      table{
+        width: 4.8rem;
+        border-collapse: collapse;
+        cursor: default;
+        border: 1px solid #ccc;
+        margin-top: .15rem;
+        box-shadow: 0px 0px 10px rgba(0,255,255,0.75);
+        border: 1px solid rgba(127,255,255,0.75);
+        -webkit-box-shadow: 0px 0px 8px rgba(0,255,255,0.75);
+        -moz-box-shadow: 0px 0px 8px rgba(0,255,255,0.75);
+        box-shadow: 0px 0px 8px rgba(0,255,255,0.75);
+      }
+      .tbTitle>th {
+        font-weight: 300;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        font: .0918rem "微软雅黑", Arial, Helvetica, sans-serif;
+        background-color: rgba(0,93,93,0.8);
+        color: #efefef;
+        text-shadow: 0px 0px 20px rgba(127,255,255,1);
+        height:0.22rem;
+      }
+      th, td {
+        border: 1px solid rgba(127,255,255,0.55);
+        height: 0.5rem;
+      }
+      .tbContext:hover {
+        background-color: rgba(0,99,99,0.9) !important;
+      }
+      td,td>a {
+        font: .1018rem "微软雅黑", Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 3px 0 3px 0;
+        color: rgba(127,255,255,0.75);
+        text-shadow: 0px 0px 20px rgba(0,255,255,0.75);
+      }
+      td img{
+        width: 0.8rem;
+        height: 0.43rem;
+      }
+      
+    }
+  }
+
+  //智能家居
+  #smart-home{
+    width: 100%;
+    .border1{
+      width: 3.5rem; height: 1.5rem;margin:.1rem 0 0 0;
+      background:rgba(58, 69, 128, 0.6) url(../../img/page3/bg_data.png) no-repeat top center/100% 100%;
+      border-radius:5px;
+      .border1_b{
+        text-align: center;
+        line-height: .2rem;
+      }
+      ul{
+        text-align: left;
+        list-style: none;
+        li{
+          display: inline;
+          font-size: .12rem;
+          margin-right: .08rem;
+        }
+      }
+     .border1_b::before{
+        content: " ";
+        background: url(../../img/page3/总指标.png) no-repeat top center;
+        width:24px;
+        height:24px;
+        position:absolute;
+        left:32%;
+        top:5%;
+      }
+    }
+    .border2{
+      width: 3.5rem; 
+      height: 1.5rem;
+      margin:.1rem 0 0 .1rem;
+      background:rgba(58, 69, 128, 0.6) url(../../img/page3/bg_report.png) no-repeat top center/100% 100%;
+      border-radius:5px;
+      .border2_b{
+        text-align: center;
+        line-height: .2rem;
+      }
+      .border2_b::before{
+        content: " ";
+        background: url(../../img/page3/详细指标.png) no-repeat top center;
+        width:24px;
+        height:24px;
+        position:absolute;
+        left:28%;
+        top:5%;
+      }
+    }
+    .borders{
+      margin-bottom: .06rem;
+      width: 2.3rem; 
+      height: 1.55rem;
+      background: url(../../img/page3/border_bg01.png) top center/100% 100% no-repeat;
+      p{
+        text-align: center;
+        font-size: .09rem;
+        background:url(../../img/page3/title_border.png) top center/80% 80% no-repeat;
+      }
+      .win{
+        // display: flex;
+        img{
+          width: 30%;
+          height:30%;
+          margin-top: 10%;
+        }
+        img:hover{
+          width: 3.25rem;
+          height: 3.25rem;
+          position: relative;
+          top: -2.25rem;
+          left: -.5rem;
+        }
+      }
+      .big-swiper{
+        // background: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#fff;
+        margin: 0;
+        padding: 0;
+        .swiper2{
+          width: 2.15rem;
+          .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 1.4rem;
+            height: 1.2rem;
+          }
+        }
+      }
+      .big-swiper2{
+          height: 100%;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color:#FFF;
+          margin: 0;
+          padding: 0;
+        .swiper3 {
+          width: 2.15rem;
+          height:80%;
+          .swiper-slide {
+            background: no-repeat center center/contain;
+            // width: 1.4rem;
+            // height: 1.2rem;
+            width:2.15rem!important;
+            height: 1.2rem;
+            vertical-align:bottom;
+            font-size: 18px;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+          }
+          .swiper-button-next,.swiper-button-prev{
+            width: .1rem;
+          }
+        }
+      }
+      .big-swiper3{
+        height: 100%;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          margin: 0;
+          padding: 0;
+        .swiper4 {
+          width: 2.15rem;
+        }
+        .swiper-slide {
+          background: no-repeat center center/contain ;
+          width:2.15rem!important;
+          height: 1.2rem;
+          // width:120%!important;
+          text-align: center;
+          font-size: 18px;
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+      }
+    }
+    
+    .video_bac{
+      background: url(../../img/page3/midtop.png) bottom center/100% 100% no-repeat;
+    }
+    h5{
+      text-align: center;
+      padding-top: .1rem;
+    }
+    video{
+      width: 4.5rem;
+      height: 2.8rem;
+      padding-left:.25rem;
+    }
+  }
+
+  //智慧商超
+  #supermarket{
+    .top{
+      height: .55rem;
+      background: url(../../img/page4/left_line.png) no-repeat top left , url(../../img/page4/right_line.png) no-repeat bottom right;
+      .col-md-4 div{
+        margin: .075rem auto;
+          width:1.5rem;
+          height: .425rem;
+          background: linear-gradient(to right,rgb(69, 7, 240),#3b1d96);
+          font-size: .1rem;
+          img{
+            position: relative;
+            top: .0875rem;
+            left: 0.1rem;
+            margin-right: .35rem;
+          }
+          p{
+            margin-left: .6rem;
+            color: rgb(231, 203, 43);
+            font-size: .15rem;
+          }
+      }
+
+    }
+    .bottom{
+      .first-box{
+        height: 2.8rem;display: flex;
+        .second-box{
+          width: 3.5rem;
+          .start_left,.start_right{
+            flex: 45%;
+            margin: 0 0.1rem 0 0 ;
+            color: rgb(14, 182, 233);
+          }
+          .start_left{
+            height: 2.6rem;
+            border: 0.5px solid rgba(0, 140, 255,0.3);
+            padding: 0 .2rem;
+            text-align: center;
+            h4{
+              color: white;
+            }
+            .header-li{
+              color: rgb(29, 185, 76);
+              font-size: .1rem;
+            }
+            li{
+              display: flex;
+              font-size: 0.085rem;
+              margin-top: 0.04rem;
+              span{
+                flex: 1;
+              }
+            }
+          }
+        }
+      }
+      .lamp{
+        h4{
+          padding:.02rem 0 0 .7rem;
+          width: 6.5rem; 
+          height: .2rem;
+          background: url(../../img/page4/linx.png) no-repeat top center/100% 100%;
+        }
+        .gundongBox {
+          height: 1.3rem;
+          width:6.5rem;
+          position: relative;
+          overflow: hidden;
+          font-size: .14rem;
+          color:  rgb(0, 140, 255); 
+          text-align: center;
+          .gundongList {
+            position: absolute;
+            animation: geiwogun 10s linear infinite;
+            white-space: nowrap;
+            display: flex;
+            span img{
+              width: 1rem;
+              height: 0.8rem;
+              font-size: .2rem;
+              color: #000; 
+              padding: .0925rem .025rem;
+              border: .0015rem solid rgb(0, 140, 255);
+              cursor: pointer;
+              transition: all 1s;
+              opacity:0.8;
+              filter:alpha(opacity=100);
+            }
+            img:hover{
+              transform: scale(1.4);
+              opacity:1.0;
+            filter:alpha(opacity=100); 
+            }
+          }
+          @keyframes geiwogun {
+            from {
+              transform: translate(0, 0);
+            }
+            to {
+              transform: translate(-30%, 0);
+            }
+          }
+        }
+        
+
+      }
+    }
+  }
+}
